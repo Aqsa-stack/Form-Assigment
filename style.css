@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.flag {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.green, .white, .red {
+  height: calc(100% / 3);
+  width: 100%;
+}
+
+.green {
+  background: #009640; /* Green */
+}
+
+.white {
+  background: #ffffff; /* White */
+}
+
+.red {
+  background: #ce1126; /* Red */
+}
+
+.black {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: black;
+  clip-path: polygon(0 0, 60% 25%, 60% 75%, 0 100%);
+}
